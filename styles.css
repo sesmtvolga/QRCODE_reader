@@ -1,0 +1,95 @@
+body {
+    background-color: #fff; /* Fundo branco */
+    color: #003439; /* Texto verde mais escuro */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+}
+
+#employee-info {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.logo-container,
+.employee-photo-container {
+    margin-right: 20px;
+}
+
+.company-logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.employee-photo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/* Estilo para a logo da empresa */
+.company-logo {
+    max-width: 225px;
+    height: auto;
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    
+}
+
+/* Estilo para o contêiner do cabeçalho */
+.header {
+    position: relative; /* Garante que o contêiner seja relativo para alinhar corretamente os outros elementos */
+    margin-top: 60px; /* Ajusta o espaço para a logo */
+}
+
+/* Centralizar o botão com as tabelas */
+.tables-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    padding: 8px;
+    border: 1px solid #004950; /* Verde escuro */
+}
+
+.table-title {
+    background-color: #004950; /* Verde escuro */
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Botão */
+.button {
+    background-color: #004950; /* Verde escuro */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #A2C73B; /* Verde claro */
+}
+
+@media print {
+    #export-pdf-button {
+        display: none;
+    }
+}
