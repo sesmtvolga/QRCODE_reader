@@ -54,6 +54,9 @@ function algumValorNaoSeAplica(tabela) {
             textoCelula !== 'Status: Não se aplica' &&
             textoCelula !== 'Nome: Não se aplica' &&
             textoCelula !== 'Telefone: Não se aplica' &&
+            textoCelula !== 'Tipo Sanguíneo: Não se aplica' &&
+            textoCelula !== 'Alergias: Não se aplica' &&
+            textoCelula !== 'Enfermidades: Não se aplica' &&
             textoCelula !== 'Não se aplica' &&
             !textoCelula.includes('https://lh3.googleusercontent.com/d/')) {
             return true;
