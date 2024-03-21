@@ -245,6 +245,18 @@ function obterTituloTabela(sufixo) {
             return 'Contato de Emergência';
         case 'SAUDE':
             return 'Dados de Saúde';
+        case 'SINALEIRO':
+            return 'NR 11 - Transporte e movimentação de cargas (Eletrocentro)';
+        case 'PORTICO':
+            return 'NR 11 - Transporte e movimentação de cargas (Pórtico)';
+        case 'TRANSPALETEIRA':
+            return 'NR 11 - Transporte e movimentação de cargas (Transpaletrira)';
+        case 'EMPILHADEIRA':
+            return 'NR 11 - Transporte e movimentação de cargas (Empilhadeira)';
+        case 'PEMT':
+            return 'NR18 - Plataforma elevatória móvel de trabalho (PEMT)';
+        case 'DEFENSIVA':
+            return 'Direção Defensiva';
         // Caso não seja nenhum dos sufixos específicos, retorna o próprio sufixo
         default:
             return sufixo;
