@@ -250,7 +250,7 @@ function obterTituloTabela(sufixo) {
         case 'PORTICO':
             return 'NR 11 - Transporte e movimentação de cargas (Pórtico)';
         case 'TRANSPALETEIRA':
-            return 'NR 11 - Transporte e movimentação de cargas (Transpaletrira)';
+            return 'NR 11 - Transporte e movimentação de cargas (Transpaleteira)';
         case 'EMPILHADEIRA':
             return 'NR 11 - Transporte e movimentação de cargas (Empilhadeira)';
         case 'PEMT':
