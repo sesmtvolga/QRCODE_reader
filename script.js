@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Verifica se o nome do colaborador foi fornecido na URL
     if (employeeName) {
         // Constrói a URL da API com o nome do colaborador
-        const apiUrl = `https://script.google.com/macros/s/AKfycbybav4cIQ2IP-bIu6N1l4XdOgK9Mr1AtiknbXbC9-Fo3oqi6BC8D9ZGjDmC_fO0V2_X7g/exec?nome=${encodeURIComponent(employeeName)}`;
+        const apiUrl = `https://script.google.com/macros/s/AKfycbx6BlILotTc-IcAa4Ri55jxG7xyi0rpCcvbwWQw7tc__TvLAFa_eFPrK5qWzPXlzsMpiQ/exec?nome=${encodeURIComponent(employeeName)}`;
 
         // Faz uma requisição à API usando fetch
         fetch(apiUrl)
@@ -220,7 +220,7 @@ function criarLinhaTabela(campos) {
 function obterTituloTabela(sufixo) {
     switch (sufixo) {
         case 'NOME':
-            return 'Nome do Colaborador (a)';
+            return 'Nome';
         case 'EMPRESA':
             return 'Empresa';
         case 'ASO':
@@ -228,37 +228,39 @@ function obterTituloTabela(sufixo) {
         case 'EPI':
             return 'Ficha de EPI';
         case 'NR01':
-            return 'NR 01 - Disposições Gerais e Gerenciamento de Riscos Ocupacionais';
+            return 'NR 01 - Disposições Gerais e Gerenciamento De Riscos Ocupacionais';
         case 'NR18':
-            return 'NR 18 - Segurança e Saúde no Trabalho na Indústria da Construção';
+            return 'NR 18 - Segurança e Saúde No Trabalho Na Indústria Da Construção';
         case 'NR06':
-            return 'NR 06 - Equipamento de Proteção Individual (EPI)';
+            return 'NR 06 - Equipamento De Proteção Individual (EPI)';
         case 'BASICA':
             return 'NR 10 - Básica';
         case 'SEP':
-            return 'NR 10 - Sistema Elétricos de Potência (SEP)';
+            return 'NR 10 - Sistema Elétricos De Potência (SEP)';
         case 'NR35':
-            return 'NR 35 - Trabalho em altura';
+            return 'NR 35 - Trabalho Em Altura';
         case 'NR12':
-            return 'NR 12 - Segurança no Trabalho Em Máquinas e Ferramentas';
+            return 'NR 12 - Segurança No Trabalho Em Máquinas e Ferramentas';
         case 'QUENTENR18':
             return 'NR 18 - Trabalho a Quente';
         case 'QUENTENR34':
             return 'NR 34 - Trabalho a Quente';
+        case 'NR33':
+            return 'NR 33 - Segurança e Saúde Nos Trabalhos Em Espaços Confinados';
         case 'EMERGENCIA':
-            return 'Contato de Emergência';
+            return 'Contato De Emergência';
         case 'SAUDE':
-            return 'Dados de Saúde';
+            return 'Dados De Saúde';
         case 'SINALEIRO':
-            return 'NR 11 - Transporte e movimentação de cargas (Sinaleiro)';
+            return 'NR 11 - Transporte e Movimentação De Cargas (Sinaleiro)';
         case 'PORTICO':
-            return 'NR 11 - Transporte e movimentação de cargas (Pórtico)';
+            return 'NR 11 - Transporte e Movimentação De Cargas (Pórtico)';
         case 'TRANSPALETEIRA':
-            return 'NR 11 - Transporte e movimentação de cargas (Transpaleteira)';
+            return 'NR 11 - Transporte e Movimentação De Cargas (Transpaleteira)';
         case 'EMPILHADEIRA':
-            return 'NR 11 - Transporte e movimentação de cargas (Empilhadeira)';
+            return 'NR 11 - Transporte e Movimentação De Cargas (Empilhadeira)';
         case 'PEMT':
-            return 'NR18 - Plataforma elevatória móvel de trabalho (PEMT)';
+            return 'NR18 - Plataforma Elevatória Móvel De Trabalho (PEMT)';
         case 'DEFENSIVA':
             return 'Direção Defensiva';
         // Caso não seja nenhum dos sufixos específicos, retorna o próprio sufixo
