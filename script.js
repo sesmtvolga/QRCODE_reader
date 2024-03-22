@@ -220,7 +220,7 @@ function criarLinhaTabela(campos) {
 function obterTituloTabela(sufixo) {
     switch (sufixo) {
         case 'NOME':
-            return 'Nome';
+            return 'Nome do Colaborador (a)';
         case 'EMPRESA':
             return 'Empresa';
         case 'ASO':
