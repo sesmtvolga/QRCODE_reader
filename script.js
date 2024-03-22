@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Verifica se o nome do colaborador foi fornecido na URL
     if (employeeName) {
         // Constrói a URL da API com o nome do colaborador
-        const apiUrl = `https://script.google.com/macros/s/AKfycbyUgfOdR-IMCUI2j0fE8Qm1CScqMpD03hKLU7-JQt4MTdvcD9RJzEpyr9SuqrzlL0w7Aw/exec?nome=${encodeURIComponent(employeeName)}`;
+        const apiUrl = `https://script.google.com/macros/s/AKfycbybav4cIQ2IP-bIu6N1l4XdOgK9Mr1AtiknbXbC9-Fo3oqi6BC8D9ZGjDmC_fO0V2_X7g/exec?nome=${encodeURIComponent(employeeName)}`;
 
         // Faz uma requisição à API usando fetch
         fetch(apiUrl)
@@ -227,26 +227,30 @@ function obterTituloTabela(sufixo) {
             return 'Exame ASO';
         case 'EPI':
             return 'Ficha de EPI';
+        case 'NR01':
+            return 'NR 01 - Disposições Gerais e Gerenciamento de Riscos Ocupacionais';
         case 'NR18':
-            return 'Curso NR18';
+            return 'NR 18 - Segurança e Saúde no Trabalho na Indústria da Construção';
         case 'NR06':
-            return 'Curso NR06';
+            return 'NR 06 - Equipamento de Proteção Individual (EPI)';
         case 'BASICA':
-            return 'Curso NR10 Básica';
+            return 'NR 10 - Básica';
         case 'SEP':
-            return 'Curso NR10 SEP';
+            return 'NR 10 - Sistema Elétricos de Potência (SEP)';
         case 'NR35':
-            return 'Curso NR35';
+            return 'NR 35 - Trabalho em altura';
         case 'NR12':
-            return 'Curso NR12';
-        case 'QUENTE':
-            return 'Curso de Trabalho a Quente';
+            return 'NR 12 - Segurança no Trabalho Em Máquinas e Ferramentas';
+        case 'QUENTENR18':
+            return 'NR 18 - Trabalho a Quente';
+        case 'QUENTENR34':
+            return 'NR 34 - Trabalho a Quente';
         case 'EMERGENCIA':
             return 'Contato de Emergência';
         case 'SAUDE':
             return 'Dados de Saúde';
         case 'SINALEIRO':
-            return 'NR 11 - Transporte e movimentação de cargas (Eletrocentro)';
+            return 'NR 11 - Transporte e movimentação de cargas (Sinaleiro)';
         case 'PORTICO':
             return 'NR 11 - Transporte e movimentação de cargas (Pórtico)';
         case 'TRANSPALETEIRA':
